@@ -10,12 +10,8 @@ import ru.geekbrains.androidkotlin.data.Weather
 
 class WeatherAdapter (private val repository: IRepository): RecyclerView.Adapter<WeatherAdapter.WeatherViewHolder> (){
     class WeatherViewHolder(val item: View): RecyclerView.ViewHolder(item){
-        private val city : TextView
-        private val temperature : TextView
-        init {
-            city = item.findViewById(R.id.textCity)
-            temperature = item.findViewById(R.id.textTemperature)
-        }
+        private val city : TextView = item.findViewById(R.id.textCity)
+        private val temperature : TextView = item.findViewById(R.id.textTemperature)
         fun bind(weather: Weather){
             city.text = weather.town
             temperature.text = weather.temperature.toString()
