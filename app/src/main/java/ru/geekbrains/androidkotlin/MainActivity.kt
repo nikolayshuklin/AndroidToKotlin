@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener {
             Toast.makeText(
                 this@MainActivity,
-                "Нажатие кнопки",
+                "Кнопка нажата",
                 Toast.LENGTH_LONG
             ).show()
         }

@@ -7,7 +7,7 @@ object Repository: IRepository {
         Weather("Магадан", 9),
         Weather("Владивосток", 27),
         Weather("Сочи", 33),
-        Weather("Ростов", 35),
+        Weather("Ростов", 34),
     )
 
     override fun getWeathers(): List<Weather> {
